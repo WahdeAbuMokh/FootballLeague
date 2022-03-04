@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowMatch">
+    <ImageView
+        android:background="@drawable/bg8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ImageView>
+  <LinearLayout
+      android:layout_centerHorizontal="true"
+      android:layout_marginTop="40dp"
+      android:background="@drawable/bg_item_intent_red"
+      android:orientation="vertical"
+      android:id="@+id/header"
+      android:layout_width="340dp"
+      android:layout_height="wrap_content">
+    <LinearLayout
+
+
+
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:weightSum="3"
+
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/team1StartMatchimg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/paris"
+                android:layout_marginLeft="20dp"
+                app:civ_border_width="0dp"
+                app:civ_border_color="#FF000000"
+                />
+            <TextView
+                android:fontFamily="@font/font3"
+                android:layout_marginTop="20dp"
+                android:textColor="#C6CA3D"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="loading.."
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:id="@+id/team1StartMatchtv"
+                />
+            <TextView
+                android:id="@+id/TvStartMatchResult1"
+                android:fontFamily="@font/font3"
+
+                android:layout_marginTop="20dp"
+                android:textColor="#DCC41B"
+
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="loading.."
+                android:textAlignment="center"
+                android:textSize="12sp"
+
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:text="VS"
+            android:textColor="#fff"
+            android:fontFamily="@font/font2"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="40sp"
+            android:gravity="center"
+            />
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="0dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/team2StartMatchimg"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/barcelona"
+                android:layout_gravity="center"
+                app:civ_border_width="0dp"
+                app:civ_border_color="#FF000000"
+                />
+            <TextView
+                android:fontFamily="@font/font3"
+                android:layout_marginTop="20dp"
+                android:textColor="#C6CA3D"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="loading.."
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:id="@+id/team2StartMatchtv"
+                />
+            <TextView
+                android:id="@+id/TvStartMatchResult2"
+                android:layout_marginTop="20dp"
+                android:textColor="#DCC41B"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/font3"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="loading.."
+                android:textSize="12sp"
+
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="60dp"/>
+  </LinearLayout>
+   <ScrollView
+
+        android:layout_below="@+id/header"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:textSize="18sp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:inputType="date"
+                android:id="@+id/TvStartMatchDate"
+
+                />
+            <TextView
+
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:textSize="18sp"
+                android:inputType="time"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/TvStartMatchTime"
+                />
+        </LinearLayout>
+
+        <Button
+            android:visibility="gone"
+                android:layout_width="135dp"
+                android:layout_height="60dp"
+                android:text="Exit"
+                android:id="@+id/btnExitMatch"
+                android:layout_gravity="center"
+                android:shadowColor="#FF0026"
+                android:shadowDx="6.3"
+                android:shadowDy="0"
+                android:shadowRadius="6"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="horizontal"
+            app:cardCornerRadius="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:text="Match Line up"
+                        android:gravity="center"
+                        android:id="@+id/Tv_lineup"
+                        />
+                    <Button
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:background="@drawable/ic_baseline_arrow_drop_down_circle_24"
+                        android:layout_marginStart="25dp"
+                        android:id="@+id/DropDown_btn2"
+
+                        />
+                </LinearLayout>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lineup_ScrollView"
+                    android:visibility="gone">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Tv_lineup_team1Name"
+                            android:textSize="22sp"
+                            android:gravity="center"
+                            android:textColor="@color/black"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            android:id="@+id/Team1_match_lineup_recycler_view"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/Tv_lineup_team2Name"
+                            android:textSize="22sp"
+                            android:gravity="center"
+                            android:textColor="@color/black"/>
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            android:id="@+id/Team2_match_lineup_recycler_view"/>
+                    </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:id="@+id/scroll1"
+            android:layout_gravity="center"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+
+                android:background="#313131"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+
+                    android:paddingLeft="10dp"
+                    android:fontFamily="@font/font3"
+                    android:id="@+id/StatsTV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="left"
+                    android:textColor="#fff"
+                    android:text="OK"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+   </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#ccc"
+    android:orientation="vertical"
+    tools:context=".LeagueMatches">
+    <ImageView
+        android:scaleType="fitXY"
+        android:alpha=".85"
+        android:src="@drawable/bg2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+<TextView
+
+    android:fontFamily="@font/abraham"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:text="League Matches"
+    android:textSize="40sp"
+    android:textColor="@color/white"
+    android:gravity="center"
+    />
+    <LinearLayout
+
+        android:id="@+id/footer"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:elevation="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"
+        android:layout_weight=".80"
+       android:background="@drawable/button_simple_menu"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Current Matches"
+        android:textSize="12sp"
+
+        android:id="@+id/btnCurrentMatches"/>
+    <Button
+        android:elevation="3dp"
+        android:background="@drawable/button_simple_menu"
+        android:layout_weight=".80"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Ended Matches"
+        android:textSize="12sp"
+         android:layout_marginLeft="10dp"
+        android:id="@+id/btnEndedMatches"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:id="@+id/Matches_recycle_view"
+        android:layout_width="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

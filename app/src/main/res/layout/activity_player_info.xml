@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbb5"
+
+    android:orientation="vertical"
+    tools:context=".PlayerInfo">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+  <LinearLayout
+      android:gravity="center"
+      android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/PlayerInfoImg"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        app:civ_border_color="#53BC5C"
+        app:civ_border_width="1dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/salah2"
+        android:layout_marginBottom="10dp"
+        />
+
+  </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+                <TextView
+                    android:text="1000"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/PlayerInfoName"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:gravity="center|left"
+                    android:textSize="22sp" />
+                <TextView
+
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rounded_green"
+                    android:layout_alignParentRight="true"
+                    android:text="29"
+                    android:id="@+id/PlayerInfoAge"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    <LinearLayout
+
+        android:paddingLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/td_border_left_black"
+            android:text="Team Name:"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_marginRight="10dp"
+            android:background="@drawable/td_border_right_black"
+            android:paddingLeft="10dp"
+            android:text="0"
+            android:layout_weight="1"
+            android:id="@+id/PlayerInfoTeamName"
+            android:layout_width="0dp"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:layout_height="match_parent"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:orientation="horizontal">
+        <TextView
+            android:background="@drawable/td_border_top_black"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:text="Shirt Number:"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp"
+
+          />
+        <TextView
+            android:background="@drawable/td_border_right_top_black"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="0"
+            android:layout_weight="1"
+            android:id="@+id/PlayerInfoShirtNumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@drawable/td_border_top_black"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Goals:"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp"/>
+        <TextView
+            android:background="@drawable/td_border_right_top_black"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="0"
+            android:layout_weight="1"
+            android:id="@+id/PlayerInfoGoals"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_weight="1"
+            android:background="@drawable/td_border_top_black"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+
+            android:textColor="@color/white"
+            android:text="Assists:"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp" />
+        <TextView
+            android:background="@drawable/td_border_right_top_black"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="0"
+            android:layout_weight="1"
+            android:id="@+id/PlayerInfoAssists"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+
+            android:background="@drawable/td_border_top_black"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+
+            android:text="Appearances:"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp" />
+        <TextView
+            android:background="@drawable/td_border_right_top_black"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="0"
+            android:layout_weight="1"
+            android:id="@+id/PlayerInfoAppearances"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+       android:weightSum="2"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@drawable/td_border_top_black"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+
+            android:text="Red Cards:"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:background="@drawable/td_border_right_top_black"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="0"
+            android:layout_weight="1"
+            android:id="@+id/PlayerInfoRedCard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textColor="#D11027"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:background="@drawable/td_border_bottom_black"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:text="Yellow Cards:"
+            android:textColor="@color/white"
+            android:paddingLeft="10dp"
+            android:gravity="center|left"
+            android:textSize="20sp" />
+        <TextView
+            android:background="@drawable/td_border_right_bottom_black"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:text="0"
+            android:layout_weight="1"
+            android:id="@+id/PlayerInfoYellowCards"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center|left"
+            android:textColor="#D1A710"
+            android:textSize="24sp" />
+    </LinearLayout>
+    <Button
+        android:visibility="gone"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/btnExitInfo"
+        android:text="Exit"/>
+    </LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iconLogo"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/team1"
+        android:layout_width="70dp"
+        android:layout_height="70dp">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+</RelativeLayout>

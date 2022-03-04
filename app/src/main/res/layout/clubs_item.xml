@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="0dp"
+    app:cardElevation="3dp"
+
+    android:layout_marginTop="10dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="0dp">
+    <LinearLayout
+
+        android:id="@+id/item"
+        android:background="@drawable/item_recycle"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_gravity="left|center"
+            android:id="@+id/ClubImg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/team1"
+            android:layout_marginLeft="15dp"
+            app:civ_border_width="0dp"
+
+            app:civ_border_color="#FF000000" />
+        <TextView
+
+            android:layout_marginLeft="8dp"
+            android:text="Liverpool"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:id="@+id/ClubName_Tv"
+            />
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:id="@+id/ClubManger_Tv"
+            />
+
+
+
+    
+    <Button
+        android:visibility="gone"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_baseline_arrow_drop_down_circle_24"
+        android:layout_marginStart="25dp"
+        android:id="@+id/DropDown_btn"
+        
+        />
+    </LinearLayout>
+     <TextView
+         android:visibility="gone"
+         android:background="@drawable/hr_layout"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"></TextView>
+</LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Club_Players_ScrollView"
+        android:visibility="gone">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:id="@+id/Club_Players_recycle_view"/>
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

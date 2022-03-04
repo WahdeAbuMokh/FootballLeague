@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#111"
+    android:id="@+id/view1"
+
+    android:layout_height="wrap_content">
+    <ImageView
+        android:alpha=".75"
+        android:layout_centerInParent="false"
+        android:src="@drawable/bg5"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ImageView>
+    <ImageView
+        android:id="@+id/closeBottom"
+        android:src="@drawable/arrowdown"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="80dp"
+        android:layout_height="80dp"></ImageView>
+    <LinearLayout
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/closeBottom"
+        android:visibility="visible"
+        android:layout_marginLeft="10dp"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+
+            android:paddingRight="40dp"
+            android:radius="0dp"
+            android:drawableLeft="@drawable/ball"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/button_simple"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:id="@+id/btngo"
+            android:text="Show Table"
+            />
+        <Button
+            android:paddingRight="40dp"
+            android:drawableLeft="@drawable/ball"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#fff"
+            android:background="@drawable/button_simple"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnMatch"
+            android:text="Show Matches"
+            />
+        <Button
+            android:paddingRight="40dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ball"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/button_simple"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnClubs"
+            android:text="Show Clubs"
+            />
+        <Button
+            android:paddingRight="40dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ball"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/button_simple"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnStatistics"
+            android:text="Show Statistics"
+            />
+        <Button
+            android:visibility="gone"
+            android:paddingRight="40dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ball"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:textColor="#fff"
+            android:background="@drawable/button_simple"
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:id="@+id/btnGps"
+            android:text="Get location"
+            />
+        <TextView
+            android:visibility="gone"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/Tv_lat"
+            />
+        <TextView
+            android:visibility="gone"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/Tv_long"
+            />
+        <TextView
+            android:visibility="gone"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/Tv_country"
+            />
+        <TextView
+            android:visibility="gone"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/Tv_Locality"
+            />
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:id="@+id/Tv_Address"
+            />
+    </LinearLayout>
+</RelativeLayout>

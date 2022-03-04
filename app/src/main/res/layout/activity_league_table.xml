@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbb5"
+    tools:context=".LeagueTable">
+    <ImageView
+        android:elevation="40dp"
+        android:id="@+id/iconLogo"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/lgopremier2"
+        android:layout_width="200dp"
+        android:layout_height="150dp"/>
+    <TextView
+
+        android:fontFamily="@font/font3"
+        android:layout_marginLeft="40dp"
+        android:textSize="18dp"
+        android:elevation="12dp"
+        android:layout_marginTop="120dp"
+        android:textColor="#D1E12A"
+        android:text="Season 2021/2022"
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TableLayout
+        android:layout_marginTop="20dp"
+        android:shrinkColumns="*"
+        android:layout_below="@+id/head"
+        android:stretchColumns="*"
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<TableRow>
+    <LinearLayout
+
+        android:weightSum="9"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        >
+<TextView
+    android:textAlignment="center"
+    android:gravity="center"
+    android:layout_width="0dp"
+    android:text="Team"
+    android:textSize="20sp"
+    android:layout_height="match_parent"
+    android:textStyle="bold"
+    android:layout_weight="3"
+     />
+        <TextView
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:text="MP"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            />
+    <TextView
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:text="GD"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        />
+    <TextView
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="W"
+        android:textSize="20sp"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="D"
+        android:layout_width="0dp"
+        android:textSize="20sp"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="L"
+        android:textSize="20sp"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:text="P"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        />
+    </LinearLayout>
+</TableRow>
+    </TableLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:background="@color/white"
+    android:layout_below="@+id/table"
+    android:id="@+id/recycle_view"
+    android:layout_marginBottom="?actionBarSize"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+
+
+
+</RelativeLayout>
